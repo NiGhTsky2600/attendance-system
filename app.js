@@ -1,6 +1,4 @@
-/**
- * app.js — Auth, Session, Router
- */
+
 'use strict';
 
 const App = (() => {
