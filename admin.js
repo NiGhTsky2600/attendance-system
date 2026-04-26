@@ -114,9 +114,9 @@ const AdminPanel = (() => {
       };
       const tr = _mk('tr');
       tr.innerHTML = `
-        <td><strong>${_esc(u.name)}</strong></td>
-        <td class="mono">@${_esc(u.username)}</td>
-        <td class="mono muted">${_esc(u.clubId || '—')}</td>
+        <td class="cool-name"><strong>${_esc(u.name)}</strong></td>
+        <td class="col-username">@${_esc(u.username)}</td>
+        <td class="col-clubid">${_esc(u.clubId || '—')}</td>
         <td>${statusMap[u.status] || ''}</td>
         <td>
           ${u.status !== 'approved' ? `<button class="btn btn-success btn-sm" data-approve="${u.id}">Approve</button>` : ''}

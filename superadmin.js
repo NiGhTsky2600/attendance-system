@@ -263,7 +263,7 @@ const SuperAdminPanel = (() => {
         <div class="audit-meta">
           <span class="audit-badge ${l.type}">${l.type.toUpperCase()}</span>
           <span class="audit-who">${_esc(l.adminName)}</span>
-          <span class="audit-ref">re: "${_esc(l.refTitle)}"</span>
+          <span class="audit-ref">replying to: "${_esc(l.refTitle)}"</span>
         </div>
         <p class="audit-text">${_esc(l.text)}</p>
         <span class="reply-ts">${_fmt(l.at)}</span>`;
