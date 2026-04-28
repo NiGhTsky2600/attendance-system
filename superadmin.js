@@ -156,7 +156,7 @@ const SuperAdminPanel = (() => {
         <td class="mono">@${_esc(u.username)}</td>
         <td class="muted">${_fmt(u.createdAt)}</td>
         <td>
-          <button class="btn btn-ghost btn-sm" data-demote="${u.id}">Demote to Member</button>
+          <button class="btn btn-ghost btn-sm btn-demote" data-demote="${u.id}">Demote to Member</button>
           <button class="btn btn-danger btn-sm" data-del="${u.id}">Remove</button>
         </td>`;
       tbody.appendChild(tr);

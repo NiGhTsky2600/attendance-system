@@ -24,8 +24,12 @@ function updateClock() {
   const h = String(now.getHours()).padStart(2,'0');
   const m = String(now.getMinutes()).padStart(2,'0');
   const s = String(now.getSeconds()).padStart(2,'0');
+  const date = now.toLocaleDateString('en-PH', {weekday:'short',month:'short',day:'numeric',year:'numeric'});
   const el = document.getElementById('m-clock');
-  if (el) el.textContent = h + ':' + m + ':' + s;
+  if (el) el.innerHTML = `
+    <div>${h}:${m}:${s}</div>
+    <div style="font-size:11px;font-weight:400;color:var(--muted);margin-top:4px;">${date}</div>
+  `;
 }
 updateClock();
 setInterval(updateClock, 1000);
